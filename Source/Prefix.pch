@@ -1,0 +1,17 @@
+#import <Availability.h>
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import "cocos2d.h"
+#import "cocos2d-ui.h"
+#endif
+
+
+// New Brain Wars : Fun Numbers and words trivia games - Share with Friends
+
+
+#define CHARTBOOST_ID       @"554236a8c909a62bf4032067"
+#define CHARTBOOST_SIG      @"4732d4555268c82bed1cd909d5ccf2c4ceaa00ef"
+
+#define ADMOB_BANNER_UNIT_ID    @"ca-app-pub-2459354139997674/1934674344"
+#define ADMOB_FULL_SCREEN       @"ca-app-pub-2459354139997674/4888140749"
