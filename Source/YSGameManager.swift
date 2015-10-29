@@ -165,7 +165,7 @@ class YSGameManager: NSObject, MFMailComposeViewControllerDelegate, MFMessageCom
     {
         if(MFMailComposeViewController.canSendMail())
         {
-            var email = MFMailComposeViewController()
+            let email = MFMailComposeViewController()
             email.addAttachmentData(UIImagePNGRepresentation(inImage)!, mimeType: "image/png", fileName: "image.png")
             email.mailComposeDelegate = self;
             
@@ -178,7 +178,7 @@ class YSGameManager: NSObject, MFMailComposeViewControllerDelegate, MFMessageCom
         }
         else
         {
-            var alert = UIAlertView(title: "Email not Setup!", message: "Ooops! No email account setup in this device.", delegate: nil, cancelButtonTitle: "Ok")
+            let alert = UIAlertView(title: "Email not Setup!", message: "Ooops! No email account setup in this device.", delegate: nil, cancelButtonTitle: "Ok")
                     
             alert.show()
         }

@@ -159,7 +159,7 @@ class YSInAppUtils : NSObject,SKProductsRequestDelegate,SKPaymentTransactionObse
     }
     func failedTransaction(transaction:SKPaymentTransaction){
         if (transaction.error!.code != SKErrorPaymentCancelled) {
-            var alertView = UIAlertView(title: "Purchase Unsuccessful", message: "Your purchase failed. Please try again", delegate: nil, cancelButtonTitle: "Ok")
+            let alertView = UIAlertView(title: "Purchase Unsuccessful", message: "Your purchase failed. Please try again", delegate: nil, cancelButtonTitle: "Ok")
             alertView.show()
         }
         SKPaymentQueue.defaultQueue().finishTransaction(transaction)
